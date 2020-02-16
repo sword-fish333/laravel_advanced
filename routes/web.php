@@ -14,3 +14,12 @@ Route::get('/te-rog',function(){
 
 Route::get('channel','ChannelController@index');
 Route::get('post/create','PostController@index');
+
+Route::get('/singleton',function(){
+   $singleton=\App\DesignPatterns\Singleton::getInstance();
+    $singleton2=\App\DesignPatterns\Singleton::getInstance();
+    echo '<pre>';
+   var_dump( $singleton);
+    var_dump( $singleton2);
+
+});

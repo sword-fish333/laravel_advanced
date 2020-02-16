@@ -44,4 +44,8 @@ class User extends Authenticatable
     public function getProfiles(){
         return Profile::where('user_id',$this->id)->get();
     }
+
+    public function image(){
+        return $this->morphOne(Image::class,'imageable');
+    }
 }
