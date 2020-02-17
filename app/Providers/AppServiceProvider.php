@@ -7,7 +7,11 @@ use App\Billing\CreditPaymentGateway;
 use App\Billing\PaymentGatewayContract;
 use App\Channel;
 use App\Http\View\Composers\ChannelsComposers;
+use App\Mixins\StrMixins;
+use App\PostCardSendingService;
+use Illuminate\Routing\ResponseFactory;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 use \View;
 
 class AppServiceProvider extends ServiceProvider
@@ -43,6 +47,24 @@ class AppServiceProvider extends ServiceProvider
 //        $view->with('channels',Channel::orderBy('name')->get());
 //    });
 
-        View::composer('partials.*',ChannelsComposers::class);
+     View::composer('partials.*',ChannelsComposers::class);
+
+$this->app->singleton('PostCard', function($app){
+        return   new \App\PostCardSendingService('ro',15,100);
+
+});
+//
+//Str::macro('partNumber',function ($part){
+//    return 'AB-'.substr($part,0,3).'-'.substr($part,3);
+//});
+
+        Str::mixin(new StrMixins());
+
+ResponseFactory::macro('errorJson',function($message='The request is invalid'){
+    return [
+        'message'=>$message,
+        'error_code'=>123
+    ];
+});
     }
 }
