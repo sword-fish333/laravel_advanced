@@ -11,10 +11,10 @@ use Illuminate\Pipeline\Pipeline;
 class PostsController extends Controller
 {
     public function index(){
-//        $posts=Post::query();
+       $posts=Post::query();
 
-
+//        Post::allPosts();
 //        $pipeline
-        return view('posts',['posts'=>Post::allPosts()]);
+        return view('posts',['posts'=>$posts]);
     }
 }

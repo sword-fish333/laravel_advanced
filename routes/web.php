@@ -63,3 +63,60 @@ Route::get('/adapter',function(){
 
 
 Route::get('/posts','PostsController@index');
+Route::get('/test1',function(){
+    echo '<pre>';
+strategy();
+});
+
+
+
+function strategy(){
+    $rules=[
+      [
+          'name'=>'email',
+          'value'=>'not valid',
+          'rules'=>'email|required'
+      ],
+        [
+            'name'=>'price',
+            'value'=>1111,
+            'rules'=>'numeric|required'
+        ],
+
+        [
+            'name'=>'quantity',
+            'value'=>'',
+            'rules'=>'numeric|required'
+        ]
+    ];
+   $errors= \App\DesignPatterns\Strategy\Validator::validate($rules);
+    print_r($errors);
+}
+
+
+Route::get('/facade',function(){
+
+    $id=$_GET['id'];
+
+    $pageFacade=new \App\DesignPatterns\Facade\PageFacade();
+    echo '<pre>';
+    $pageFacade->createAndServe($id,'create and serve');
+});
+
+
+Route::get('/decorator',function(){
+
+$fileLogger=new \App\DesignPatterns\DecoratorPattern\FileLogger();
+$emailLogger=new \App\DesignPatterns\DecoratorPattern\EmailLogger($fileLogger);
+$faxLogger=new \App\DesignPatterns\DecoratorPattern\FaxLogger($emailLogger);
+$faxLogger->log('final fax log');
+});
+
+
+Route::get('/customers','CustomerController@index');
+Route::get('/customers/{id}','CustomerController@show');
+Route::get('/customers/{id}/update','CustomerController@update');
+Route::get('/customers/{id}/destroy','CustomerController@destroy');
+
+Route::get('/employees/{id}','EmployeeController@show');
+Route::get('/employees','EmployeeController@index');

@@ -9,6 +9,11 @@ use App\Channel;
 use App\Http\View\Composers\ChannelsComposers;
 use App\Mixins\StrMixins;
 use App\PostCardSendingService;
+use App\Repositories\Customer\CustomerRepository;
+use App\Repositories\Customer\CustomerRepositoryInterface;
+use App\Repositories\Employee\DbEmployeeRepository;
+use App\Repositories\Employee\EmployeeRepository;
+use App\Repositories\Employee\XmlEmployeeRepository;
 use Illuminate\Routing\ResponseFactory;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
@@ -47,7 +52,10 @@ class AppServiceProvider extends ServiceProvider
 //        $view->with('channels',Channel::orderBy('name')->get());
 //    });
 
-     View::composer('partials.*',ChannelsComposers::class);
+        $this->app->bind(CustomerRepositoryInterface::class,    CustomerRepository::class);
+
+        $this->app->bind(EmployeeRepository::class,DbEmployeeRepository::class);
+        View::composer('partials.*',ChannelsComposers::class);
 
 $this->app->singleton('PostCard', function($app){
         return   new \App\PostCardSendingService('ro',15,100);

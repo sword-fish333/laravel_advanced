@@ -10,6 +10,8 @@ use Illuminate\Pipeline\Pipeline;
 
 class Post extends Model
 {
+    const A='This is a constant';
+
     protected $guarded=[];
     public function image(){
         return $this->morphOne(Image::class,'imageable');
