@@ -18,7 +18,7 @@ class RepoServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        dd(1);
+
         $this->app->bind(EmployeeRepository::class,function(){
             return new DbEmployeeRepository(new Employee());
         });
@@ -32,7 +32,7 @@ class RepoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        dd(1);
+
 
 //        $this->app->bind(EmployeeRepository::class,DbEmployeeRepository::class);
 
