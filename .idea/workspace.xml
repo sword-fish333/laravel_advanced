@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a93967d-75b3-4ca4-a7a9-7dc4fc93802d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test-laravel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ValueObjects/Age.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ValueObjects/ValueObject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/exception_handling.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +131,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Affi&#9;null&#9;null&#10;Affili&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/factories/AffiliationFactory.php&#10;create_a&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/migrations/2020_02_20_225332_create_affiliations_table.php&#10;User&#9;null&#9;null&#10;PostFac&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/factories/PostFactory.php&#10;web&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/routes/web.php&#10;app&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/config/app.php&#10;composer.js&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/composer.json&#10;APP&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/config/app.php&#10;A&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Providers/AppServiceProvider.php&#10;Repos&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Providers/RepositoryServiceProvider.php&#10;AppSe&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Providers/AppServiceProvider.php&#10;EmployeeC&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/EmployeeController.php&#10;Reposi&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Providers/RepositoryServiceProvider.php&#10;Em&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/EmployeeController.php&#10;AppS&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Providers/AppServiceProvider.php&#10;App&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Providers/AppServiceProvider.php&#10;Emplo&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/EmployeeController.php&#10;Employee&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/EmployeeController.php&#10;CustomerC&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/CustomerController.php&#10;Data&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/seeds/DatabaseSeeder.php&#10;create_e&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/migrations/2020_02_20_100736_create_employees_table.php&#10;PostContr&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/PostsController.php&#10;Cust&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/CustomerController.php&#10;we&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/routes/web.php&#10;C&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/CustomerController.php&#10;c&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Customer.php&#10;DatabaseSe&#9;null&#9;null&#10;Customers&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/factories/CustomersFactory.php&#10;create_cust&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/migrations/2020_02_19_171412_create_customers_table.php&#10;Post&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Http/Controllers/PostsController.php&#10;posts.&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/resources/views/posts.blade.php&#10;inde&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/resources/views/posts/index.blade.php&#10;Pos&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Post.php&#10;POsts&#9;null&#9;null&#10;Collection&#9;null&#9;null&#10;TA&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Tag.php&#10;vI&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Video.php&#10;Tag&#9;null&#9;null&#10;Vide&#9;null&#9;null&#10;Comme&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Comment.php&#10;POst&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Post.php&#10;create_c&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/migrations/2020_02_16_120917_create_comments_table.php&#10;Image&#9;null&#9;null&#10;PostFa&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/database/factories/PostFactory.php&#10;WEB&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/routes/web.php&#10;Channe&#9;null&#9;null&#10;Order&#9;FILE&#9;file:///home/ghiurca/Documents/Projects/test-laravel/app/Orders/OrderDetails.php&#10;PayOrde&#9;null&#9;null&#10;Profi&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../node_trial" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -205,6 +206,9 @@
       <workItem from="1582478034825" duration="956000" />
       <workItem from="1582491801002" duration="92000" />
       <workItem from="1582537017478" duration="1081000" />
+      <workItem from="1582538122655" duration="137000" />
+      <workItem from="1582798099422" duration="3487000" />
+      <workItem from="1582927695354" duration="4461000" />
     </task>
     <servers />
   </component>
@@ -212,9 +216,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="416" y="122" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582803737711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="416" y="122" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1582803737711" />
+    <state x="466" y="122" width="424" height="479" key="FileChooserDialogImpl" timestamp="1582932918827">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="122" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582932918827" />
+    <state x="372" y="183" width="611" height="356" key="NewPhpClassDialog" timestamp="1582803723750">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="372" y="183" width="611" height="356" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1582803723750" />
     <state x="359" y="0" width="647" height="728" key="find.popup" timestamp="1582537268289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="359" y="0" width="647" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1582537268289" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582806407881">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1582806407881" />
   </component>
 </project>

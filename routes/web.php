@@ -1,5 +1,5 @@
 <?php
-
+use App\ValueObjects\Age;
 
 Route::get('/test',function(){
 
@@ -117,6 +117,17 @@ Route::get('/customers','CustomerController@index');
 Route::get('/customers/{id}','CustomerController@show');
 Route::get('/customers/{id}/update','CustomerController@update');
 Route::get('/customers/{id}/destroy','CustomerController@destroy');
+Route::get('/error_handle',function (){
+    return view('exception_handling');
+});
 
 Route::get('/employees/{id}','EmployeeController@show');
 Route::get('/employees','EmployeeController@index');
+Route::get('/value-object',function (){
+    $age=new \App\ValueObjects\Age(100);
+  $age2=  $age->increment();
+    echo  $age->getAge();
+    echo '<br>';
+    $obj=new \App\ValueObjects\ValueObject();
+    $obj->register('Alin',$age);
+});
