@@ -1,6 +1,7 @@
 <?php
 use App\ValueObjects\Age;
-
+use \App\DesignPatterns\Factory\Shape;
+use \App\DesignPatterns\Factory\Rectangle;
 Route::get('/test',function(){
 
     return \App\User::with('profiles')->get();
@@ -35,9 +36,7 @@ Route::get('/factory',function (){
 
 });
 
-function drawStuff(\App\DesignPatterns\Shape $shape){
-    $shape->draw();
-}
+
 
 Route::get('/postcards',function (){
    $postCard=new \App\PostCardSendingService('ro',15,100);
@@ -131,3 +130,18 @@ Route::get('/value-object',function (){
     $obj=new \App\ValueObjects\ValueObject();
     $obj->register('Alin',$age);
 });
+
+
+Route::get('/factory',function (){
+    try {
+        $r = (new \App\DesignPatterns\Factory\ShapeFactory())->create('rectangle');
+        drawStuff($r);
+    }catch(Exception $exception){
+        var_dump($exception->getMessage());
+    }
+});
+
+
+function drawStuff(Shape $shape){
+    $shape->draw();
+}
